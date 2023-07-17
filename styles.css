@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+:root{
+    --color--BG:#0056d6;
+    --color--containerBG:#4f95ff;
+    --color--text:white;
+    --color--buttonBG:transparent;
+}
+
+body{
+    background-color: var(--color--BG);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var( --color--text);
+}
+
+#container{
+    margin: 0 auto;
+    height: 80vh;
+    width: 40vw;
+    background: var(--color--containerBG);
+    padding: 3rem;
+    border-radius: 1.5rem;
+}
+
+#contents-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#create-Form{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#create-Form button{
+    background: var(--color--buttonBG);
+    color: var(--text--color);
+    padding: 0 .5rem;
+    border: 2px solid white;
+}
+
+#update-Form{
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+#update-Form button{
+    background:var(--color--buttonBG);
+    color: var(--text--color);
+    padding: 0 .5rem;
+    border: 2px solid white;
+}
+
+input{
+    border: 2px solid white;
+    background: transparent;
+    border-radius: .5rem;
+    padding: 0.3rem;
+    margin-right: 1rem;
+}
+
+::placeholder{
+    color: var(--text--color);
+}
+
+input{
+    outline: none;
+}
+
+#add-Friend{
+    background:var(--color--buttonBG);
+    color: var(--text--color);
+    padding:.5rem;
+    border: 2px solid white;
+}
+
+table{
+    margin-top: 2rem ;
+    width: 100%;
+    text-align: center;
+}
+
+#create-Form, #update-Form{
+    display: none;
+}
+
